@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape</title>
+
+  <!-- Link Libraries -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./lib/slick.css">
+  <link rel="stylesheet" href="./style/all.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/responsive.css">
+</head>
+<body>
+  <header id="header">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://prium.github.io/Shape/assets/img/logos/Normal.png" class="img-fluid">
+          </a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-xl-7 ml-xxl-9" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Crypto</a>
+                  <a class="dropdown-item" href="#">About</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                  <a class="dropdown-item" href="#">Start</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
+                <!-- Dropdown-menu-card để CSS dễ-->
+                <div class="dropdown-menu dropdown-menu-card" aria-labelledby="dropdownId">
+                  <!-- Card DropDown -->
+                  <div class="card">
+                    <div class="card-body py-0">
+                      <div class="row">
+                        <div class="col-6 col-md-3">
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a href="#" class="nav-link">Alert</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Background</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Badges</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Breadcrumb</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Buttons</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Cards</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Carousel</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a href="#" class="nav-link">Countdown</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Dropdowns</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">FancyScroll</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Forms</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Hoverbox</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">List group</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Modals</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a href="#" class="nav-link">Nav</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Navbar</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Page header</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Pagination</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Popovers</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Progress</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Scrollspy</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a href="#" class="nav-link">Spinner</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Tables</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Tabs</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Tooltips</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Toasts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">PHP Ajax form</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Mailbluster</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Borders</a>
+                  <a class="dropdown-item" href="#">Clearfix</a>
+                  <a class="dropdown-item" href="#">Close Icon</a>
+                  <a class="dropdown-item" href="#">Color</a>
+                  <a class="dropdown-item" href="#">Display</a>
+                  <a class="dropdown-item" href="#">Embed</a>
+                  <a class="dropdown-item" href="#">Start</a>
+                  <a class="dropdown-item" href="#">Flex</a>
+                  <a class="dropdown-item" href="#">Grid</a>
+                  <a class="dropdown-item" href="#">Sizing</a>
+                  <a class="dropdown-item" href="#">Stretched Link</a>
+                  <a class="dropdown-item" href="#">Spacing</a>
+                  <a class="dropdown-item" href="#">Typography</a>
+                  <a class="dropdown-item" href="#">Vertical Align</a>
+                  <a class="dropdown-item" href="#">Visibilities</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plugins</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Player</a>
+                  <a class="dropdown-item" href="#">Echarts</a>
+                  <a class="dropdown-item" href="#">Owl Carousel</a>
+                  <a class="dropdown-item" href="#">Slick Carousel</a>
+                  <a class="dropdown-item" href="#">Spacing</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Getting Started</a>
+                  <a class="dropdown-item" href="#">File Structure</a>
+                  <a class="dropdown-item" href="#">Customization</a>
+                  <a class="dropdown-item" href="#">Gulp</a>
+                  <a class="dropdown-item" href="#">RTL</a>
+                  <a class="dropdown-item" href="#">Plugins</a>
+                </div>
+              </li>
+            </ul>
+            <!-- Navbar Buttons -->
+            <div class="btn-area ml-auto mt-3 mt-lg-0">
+                <a class="btn btn-sm btn-secondary  mr-xl-3 mr-lg-2 mr-3" href="#">Sign in</a>
+                <a class="btn btn-sm btn-primary" href="#">Purchase</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    <div class="fake-navbar"></div>
+  </header>
+<!--  -->
+  <main>
+    <!-- Start Section-1 -->
+    <section id="section-1" class="bg-dark py-xxl-11 py-xl-8 py-lg-6 py-0">
+      <div class="bg-holder bg-1"></div>
+      <div class="bg-holder bg-2 z-index--1"></div>
+      <div class="container">
+        <!-- Title Banner -->
+        <div class="row">
+          <div class="col">
+            <div class="title position-relative text-center mb-4 z-index-2">
+              <h1 class="text-white text-capitalize font-weight-medium fs-xl-7 fs-md-6 fs-3 mt-4 mt-md-3">
+                <span class="d-inline-block position-relative">
+                  An attractive landing
+                  <span class="title-shape heading-shapes heading-shapes-right d-none d-md-inline-block"></span>
+                </span>
+                <br>
+                For your mobile app.
+              </h1>
+              <p class="fs-md-2 fs-0 text-capitalize mt-4 mx-auto">
+                The Fastest Way To Assemble Beautiful Screens And Then
+                <br>
+                Output Clean, Reusable Code.
+              </p>
+              <form class="form-row justify-content-center align-items-center" method="get" action="#">
+                <div class="col-auto mr-md-2">
+                  <input type="email" name="email" class="form-control bg-secondary border border-secondary text-white mt-3" placeholder="Your Email">
+                </div>
+                <div class="col-auto mt-md-0">
+                  <button class="btn btn-primary mt-3" type="submit">Get Access</button>
+                </div>
+              </form>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-10">
+                <img src="./img/iPad-Pro-Mockup.png" class="img-fluid" alt="Phones">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Img Banner -->
+        <div class="row justify-content-center mb-xxl-3">
+          <div class="col-xxl-10 col-xl-9 col-lg-8 col-10 mb-md-4 mb-lg-0 text-center z-index-1">
+            <h6 class="mb-xxl-6 mb-xl-5 mb-lg-4 mb-md-4 text-800 font-weight-bold fs-md-0 fs--1 text-capitalize z-index-1">trusted by companies like this</h6>
+            <!--Owl Carousel Autoplay  -->
+            <div class="owl-carousel owl-theme">
+              <div class="item"><img src="./img/airbnb-logo.png" class="img-fluid"></div>
+              <div class="item"><img src="./img/google-logo.png" class="img-fluid"></div>
+              <div class="item"><img src="./img/Spotify_Logo.png" class="img-fluid"></div>
+              <div class="item"><img src="./img/microsoft-logo.png" class="img-fluid"></div>
+              <div class="item"><img src="./img/Paypal-logo.png" class="img-fluid"></div>
+              <div class="item"><img src="./img/google-logo.png" class="img-fluid"></div>
+              <div class="item"><img src="./img/Spotify_Logo.png" class="img-fluid"></div>
+            </div>
+            <!-- End Owl Carousel Autoplay -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-1 -->
+
+    <!-- Start Section-2 -->
+    <section id="section-2" class="pb-0">
+      <div class="container">
+        <!-- Title -->
+        <div class="title row justify-content-center">
+          <div class="col text-center pt-lg-7 pt-5">
+            <div class="bg-holder d-none d-md-block"></div>
+            <div class="row justify-content-center">
+              <div class="col-xxl-6 col-xl-7 col-lg-9 col-md-10 mb-4">
+                <h1 class="font-weight-medium text-dark fs-xl-5 fs-lg-4 fs-sm-3 fs-1">
+                  <span class="position-relative">
+                    Start with our design and give
+                    <span class="heading-shapes heading-shapes-right d-none d-md-block"></span>
+                  </span>
+                  <br>
+                  <span>Your App A Fresh Look.</span>
+                </h1>
+                <p class="text-900 mt-4 mx-auto">
+                  Updating branding in your app is now easier than ever with our design system. The Shape allows you to make changes to your colors, icons within your app.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video height temporary-->
+        <div class="video row justify-content-center">
+          <div class="col pt-7">
+            <img src="./img/home-vector-1.png" alt="" class="bg-1 position-absolute d-none d-md-block">
+            <img src="./img/home-vector-2.png" alt="" class="bg-2 position-absolute d-none d-md-block">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-10">
+                <img src="./img/jhiri-1.png" alt="" class="jhiri-left-top">
+                <!-- Not Complete -->
+                <div class="rounded-lg overflow-hidden text-center my-auto">
+                  <!-- Not Complete -->
+                  <span class="text-danger">I Will Complete in future when i learn lypr library<span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Functions -->
+        <div class="function row mt-7 justify-content-center">
+          <div class="col-lg-4 col-md-8 mb-4 mg-lg-0">
+            <div class="media p-xxl-4">
+              <img src="./img/icon-1.png" alt="" width="60">
+              <div class="media-body ml-3">
+                <h5 class="font-weight-bold">Create your account in Shape</h5>
+                <p class="text-900">its easy, simple and just a few clicks job to create an account with shape</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8 mb-4 mg-lg-0">
+            <div class="media p-xxl-4">
+              <img src="./img/icon.png" alt="" width="60">
+              <div class="media-body ml-3">
+                <h5 class="font-weight-bold">Start Building Beautiful Apps With Shape</h5>
+                <p class="text-900">with our design system, you will find it no brainers job to build your application</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8 mb-4 mg-lg-0">
+            <div class="media p-xxl-4">
+              <img src="./img/icon-3.png" alt="" width="60">
+              <div class="media-body ml-3">
+                <h5 class="font-weight-bold">Deploy Your Site And Make Money</h5>
+                <p class="text-900">make it, bake it, and next thing you know your cake is ready. enjoy it!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-2 -->
+
+    <!-- Start Section-3 -->
+    <section id="section-3" class="py-xxl-11 py-xl-9 py-lg-11 pb-md-7 pt-10 position-relative overflow-hidden">
+      <div class="bg-holder"></div>
+      <div class="bg-holder"></div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+
+          <div class="info col-xxl-5 col-lg-6 col-md-10">
+            <h1 class="text-white fs-xl-5 fs-lg-4 fs-3">It’s Stylish by default.</h1>
+            <p class="text-500 mt-4 w-xl-75">
+              With our built-in design system, it's easy to create beautiful screens with ease. And because we separate style from layout, you can try out new themes instantly.
+            </p>
+            <div class="row mt-6">
+              <div class="col-md-5">
+                <span class="fa-stack">
+                  <i class="fas fa-brain"></i>
+                </span>
+                <h5 class="font-weight-bold text-white mt-2">Smart Features</h5>
+                <p class="text-500 line-height-2">we have 120+ smart unique features</p>
+              </div>
+              <div class="col-lg-6 col-md-5 mt-3 mt-md-0">
+                <span class="fa-stack">
+                    <i class="fas fa-cannabis"></i>
+                  </i>
+                </span>
+                <h5 class="font-weight-bold text-white mt-2">Dynamic Structure</h5>
+                <p class="text-500 line-height-2">Our structure is stable and versatile</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone-img col-lg col-10 mt-6">
+            <img src="./img/home-vector-3.png" class="position-absolute d-none d-md-block" alt="">
+            <img src="./img/shapes-4.png" class="position-absolute d-none d-md-block" alt="">
+            <img src="./img/shapes-3.png" class="position-absolute d-none d-md-block t-0" alt="">
+            <img src="./img/iPad-Pro-Design-Mockup.png" class="img-fluid z-index-1 position-relative" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bg-1200 b-0 h-50 w-100 position-absolute z-index--1"></div>
+    </section>
+    <!-- End Section-3 -->
+
+    <!-- Start Section-4 -->
+    <section id="section-4" class="bg-1200 overflow-hidden">
+      <div class="container">
+        <div class="row justify-content-center text-center text-lg-left">
+          <div class="workflow-img col-xl-6 col-lg-5 col-10 mb-6 mb-lg-0">
+            <img src="./img/shapes-20.png" class="position-absolute d-none d-md-block" alt="">
+            <img src="./img/home-svg-bg.png" class="img-fluid rounded-circle" alt="">
+          </div>
+
+          <div class="col-xl col-lg-7 col-10 ml-md-3">
+            <h1 class="text-white fs-xl-5 fs-lg-4 fs-md-3 fs-2">Fits Into Any Workflow.</h1>
+            <p class="text-500 w-75 mx-auto mx-lg-0">our system goes with almost any kind of integrations and supports almost every platform.</p>
+            <div class="row mt-5 justify-content-center justify-content-lg-start">
+              <div class="col-10 col-md-5 mb-xl-4 mb-3 mr-xl-4 mr-md-3 mb-3 hover-cardgroup bg-extra-1">
+                <div class="media align-items-center">
+                  <img class="img-fluid" src="./img/slack-logo.png" alt="">
+                  <div class="card-body text-left">
+                    <a href="#" class="stretched-link"></a>
+                    <p class="title mb-0 font-weight-bold text-white fs-xl-0 fs-lg--1 fs-0">Slack</p>
+                    <p class="text-500 mb-0 fs-xl-0 fs-lg--1 fs-0">Communication</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-md-5 mb-xl-4 mb-3 mb-3 hover-cardgroup bg-extra-1">
+                <div class="media align-items-center">
+                  <img class="img-fluid" src="./img/dropbox-logo.png" alt="">
+                  <div class="card-body text-left">
+                    <a href="#" class="stretched-link"></a>
+                    <p class="title mb-0 font-weight-bold text-white fs-xl-0 fs-lg--1 fs-0">Dropbox</p>
+                    <p class="text-500 mb-0 fs-xl-0 fs-lg--1 fs-0">Productivity</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-md-5 mb-xl-4 mb-3 mr-xl-4 mr-md-3 mb-3 hover-cardgroup bg-extra-1">
+                <div class="media align-items-center">
+                  <img class="img-fluid" src="./img/hubstaff-logo.png" alt="">
+                  <div class="card-body text-left">
+                    <a href="#" class="stretched-link"></a>
+                    <p class="title mb-0 font-weight-bold text-white fs-xl-0 fs-lg--1 fs-0">Hubstaff</p>
+                    <p class="text-500 mb-0 fs-xl-0 fs-lg--1 fs-0">Productivity</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-md-5 mb-xl-4 mb-3 mb-3 hover-cardgroup bg-extra-1">
+                <div class="media align-items-center">
+                  <img class="img-fluid" src="./img/Sketch_Logo.png" alt="">
+                  <div class="card-body text-left">
+                    <a href="#" class="stretched-link"></a>
+                    <p class="title mb-0 font-weight-bold text-white fs-xl-0 fs-lg--1 fs-0">Sketch</p>
+                    <p class="text-500 mb-0 fs-xl-0 fs-lg--1 fs-0">Create Tools</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="text-decoration">
+              <h6 class="font-weight-bold text-info text-capitalize mt-4 ml-1">
+                view all integrations   
+                <i class="fas fa-arrow-right"></i>
+              </h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-4 -->
+
+    <!-- Start Section-5 -->
+    <section id="section-5" class="py-0 overflow-hidden">
+      <div class="container">
+        <div class="row flex-center justify-content-xxl-between">
+          <!-- CV info -->
+          <div class="cv-info col-xxl-5 col-xl-6 col-lg-7 col-11 pt-8 pb-xl-8 pb-4 pl-xxl-0 pl-xl-6 order-xl-1">
+            <img src="./img/home-vector.png" alt="" class="position-absolute d-none d-lg-block w-50 r-0">
+            <div class="text-center text-xl-left position-relative">
+              <h1 class="font-weight-medium text-dark text-capitalize fs-xxl-5 fs-4">
+                <span class="position-relative">
+                  We are professional
+                  <span class="heading-shapes heading-shapes-right"></span>
+                </span>
+                <br>
+                at shape Studios.
+              </h1>
+              <p class="text-900 mt-4 w-lg-75 mx-lg-auto mx-xl-0">
+                A design dummy text for this content, and design, helping people in each discipline collaborate. And That is Shape for you.
+              </p>
+              <h3 class="text-900 mt-lg-7 mt-5 fs-lg-3 fs-2 mb-4">
+                Excited about our team?
+                <br>
+                we are hiring!
+              </h3>
+              <a href="#" class="btn btn-primary mx-2 mt-3">Drop your CV</a>
+              <a href="#" class="btn btn-extra mx-2 mt-3">Learn More</a>
+              <p class="mt-3 fs--1">
+                *Please read our
+                <a href="#" class="text-decoration-none font-weight-bold text-1000">term and conditions</a>
+                before
+                <br>
+                dropping your CV
+              </p>
+            </div>
+          </div>
+
+          <!-- Founder & CEO -->
+          <div class="col-xl-6 col-lg-9 col-md-11 col-sm-10 pb-8 pb-xl-0">
+            <!-- Not complete Slick Carousel -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-5 -->
+
+    <!-- Start Section-6 -->
+    <section id="section-6" class="py-0">
+      <div class="bg-holder"></div>
+      <div class="container">
+        <div class="row justify-content-end align-items-center no-gutters">
+          <div class="col-md col-lg-auto text-right d-none d-md-block">
+            <img src="./img/shapes-20.png" alt="">
+          </div>
+          <div class="access col-xxl-5 col-xl-7 col-lg-8 col-md-10 text-center py-lg-7 py-6">
+            <div class="bg-holder"></div>
+            <div class="position-relative">
+              <h1 class="font-weight-medium text-white fs-xl-5 fs-4">
+                <span class="position-relative">
+                  Get early access!
+                  <span class="heading-shapes heading-shapes-right d-none d-md-block"></span>
+                </span>
+              </h1>
+              <p class="text-white mt-md-4">Secure your spot in our beta with just an email</p>
+              <form action="#" class="mt-4">
+                <div class="form-row flex-center">
+                  <div class="col-auto mt-3">
+                    <input type="email" name="email" placeholder="Yours Email" class="form-control">
+                  </div>
+                  <div class="col-auto mt-3">
+                    <button type="button" class="btn btn-primary">Get Access</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-6 -->
+
+    <!-- Start Section-7 -->
+    <section id="section-7" class="overflow-hidden">
+      <div class="container">
+        <div class="download row align-items-center justify-content-between">
+          <div class="col-xl-5 col-lg-6 text-center py-lg-6 py-md-8 py-6">
+            <div class="bg-holder"></div>
+            <div class="position-relative">
+              <h1 class="text-900 font-weight-medium fs-xl-5 fs-4">
+                <span class="position-relative">
+                  Download It Now!
+                  <span class="heading-shapes heading-shapes-right d-none d-md-block"></span>
+                </span>
+              </h1>
+              <span class="mt-md-4 text-900">
+                You can get the mobile version of our
+                <br>
+                application from stores for free
+              </span>
+            </div>
+            <div class="row text-left justify-content-center mt-6">
+              <div class="col-md-6 col-10">
+                <div class="card bg-primary">
+                  <div class="card-body py-2">
+                    <div class="row flex-center">
+                      <div class="col-auto">
+                        <i class="text-white fab fa-apple fa-2x"></i>  
+                      </div>
+                      <div class="col-auto">
+                        <p class="text-white fs--1 text-capitalize mb-0 font-weight-bold">Download On The</p>
+                        <a href="#" class="text-decoration-none stretched-link text-white fs-0 text-capitalize mb-0 font-weight-bold">Apple Store</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-10 mt-3 mt-md-0">
+                <div class="card bg-primary">
+                  <div class="card-body py-2">
+                    <div class="row flex-center">
+                      <div class="col-auto">
+                        <i class="text-white fab fa-google-play fa-2x"></i>
+                      </div>
+                      <div class="col-auto">
+                        <p class="text-white fs--1 text-capitalize mb-0 font-weight-bold">Download On The</p>
+                        <a href="#" class="text-decoration-none stretched-link text-white fs-0 text-capitalize mb-0 font-weight-bold">Google play</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone col-xl-5 col-lg-6 h-banner">
+            <!-- I haven't learn SVG path to learn, this img from internet -->
+            <img src="./img/phone.jpg" class="img-fluid rounded" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-7 -->
+
+    <!-- Start Section-8 -->
+    <section id="section-8" class="py-0 bg-dark">
+      <div class="bg-holder"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h3 class="text-white fs-lg-3 fs-2">
+              <span class="position-relative">
+                Start building beautiful apps
+                <span class="heading-shapes heading-shapes-right d-none d-md-block"></span>
+              </span>
+            </h3>
+            <button type="button" class="btn btn-light mt-3">Purchase Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-8 -->
+    
+    <!-- Start Section-9 -->
+    <section id="section-9" class="bg-dark overflow-hidden">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-between">
+          <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
+            <h4 class="text-white">Navigate</h4>
+            <div class="nav flex-column mt-3">
+              <a href="#" class="nav-item nav-link px-2 pl-0 text-800">Demos</a>
+              <a href="#" class="nav-item nav-link px-2 pl-0 text-800">Pages</a>
+              <a href="#" class="nav-item nav-link px-2 pl-0 text-800">Blog</a>
+              <a href="#" class="nav-item nav-link px-2 pl-0 text-800">Portfolio</a>
+              <a href="#" class="nav-item nav-link px-2 pl-0 text-800">Elements</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mr-auto">
+            <h4 class="text-white">Contact</h4>
+            <div class="media mt-4">
+              <i class="text-warning mr-3 mt-1 fas fa-map-marker"></i>
+              <div class="media-body">
+                <p class="text-600 mb-0">369 ape view Avenue</p>
+                <p class="text-600">Brooklyn, NY</p>
+              </div>
+            </div>
+            <div class="media mt-4">
+              <i class="text-warning mr-3 mt-1 fas fa-phone"></i>
+              <div class="media-body">
+                <p class="text-600 mb-0">369 ape view Avenue</p>
+                <p class="text-600">Mon - Fri 9am - 5pm</p>
+              </div>
+            </div>
+            <div class="media mt-4">
+              <i class="text-warning mr-3 mt-1 fas fa-envelope"></i>
+              <div class="media-body">
+                <p class="text-600 mb-0">+91 3929 3355</p>
+                <p class="text-600">Brooklyn, NY</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-8 col-10 text-center mt-5 mt-lg-0">
+            <h4 class="text-white">Contact</h4>
+            <p class="text-500 mt-4">Latest Shape news, articles, and resources sent straight to your inbox every month.</p>
+            <div class="form-group row">
+              <input class="form-control form-control-sm" type="email" name="email" placeholder="Your Email">
+              <button type="button" class="btn btn-block btn-sm mt-3 btn-primary">Subscribe</button>
+              <p class="fs--1 mt-1">We’ll never share your details. See our Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-9 -->
+
+    <!-- Start Section-10 -->
+    <section id="section-10" class="bg-dark py-2">
+      <div class="text-center justify-content-center">
+        <div class="col-auto">
+          <div class="nav justify-content-center">
+            <a href="#" class="nav-item nav-link fx-2 social-icon-hover-primary">
+              <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="#" class="nav-item nav-link px-2 social-icon-hover-primary">
+              <i class="fab fa-facebook social-icon"></i>
+            </a>
+            <a href="#" class="nav-item nav-link px-2 social-icon-hover-primary">
+              <i class="fab fa-youtube social-icon"></i>
+            </a>
+            <a href="#" class="nav-item nav-link px-2 social-icon-hover-primary">
+              <i class="fab fa-instagram social-icon"></i>
+            </a>
+            <a href="#" class="nav-item nav-link px-2 social-icon-hover-primary">
+              <i class="fab fa-linkedin social-icon"></i>
+            </a>
+          </div>
+          <p>
+            Make with 
+            <i class="fa fa-heart"></i>
+            by
+            <a href="#" class="text-decoration-none font-weight-bold text-white" target="_blank">ThemeWagon</a>
+          </p>
+          <p>Remake: Lê Trần Minh Huy <br> Just for learning <br> Say no to COPYRIGHT</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Section-10 -->
+  </main>
+
+  <footer></footer>
+  <!-- Link JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./lib/slick.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:50,
+      autoplay:true,
+      dotsEach: true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
+      dots:true,
+      responsive:{
+          0:{
+              items:3,
+              margin:0,
+          },
+          600:{
+              items:3,
+              margin:50
+          },
+          1000:{
+              items:5,
+              margin:80
+          }
+        }
+    });
+  </script>
+</body>
+</html>
