@@ -1,1 +1,0 @@
-1. Lỗi bg làm ảnh hưởng các element trong banner.
